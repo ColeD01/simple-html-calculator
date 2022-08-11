@@ -1,0 +1,17 @@
+.calculator {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.Addition {
+
+}
+
+.Subtraction {
+
+}
+
+.Multiplication {
+
+}
