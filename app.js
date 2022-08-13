@@ -10,9 +10,11 @@ addForm.addEventListener("submit", function(event) {
     let num2 = addForm.add2.value
     let sum = Number(num1) + Number(num2)
 
-    let addH1 = document.createElement("h1")
+    let addH1 = document.getElementById("result")
     addH1.textContent = sum
-    document.getElementById("add-button").append(addH1)
+
+    addForm.add1.value = 0
+    addForm.add2.value = 0
 })
 
 subForm.addEventListener("submit", function(event) { 
@@ -21,9 +23,12 @@ subForm.addEventListener("submit", function(event) {
     let num2 = subForm.sub2.value
     let result = Number(num1) - Number(num2)
 
-    let subH1 = document.createElement("h1")
+    let subH1 = document.getElementById("result2")
     subH1.textContent = result
-    document.getElementById("sub-button").append(subH1)
+
+    subForm.sub1.value = 0
+    subForm.sub2.value = 0
+
 })
 
 multForm.addEventListener("submit", function(event) {
@@ -32,7 +37,11 @@ multForm.addEventListener("submit", function(event) {
     let num2 = multForm.multiply2.value
     let result = Number(num1) * Number(num2)
 
-    let multH1 = document.createElement("h1")
+    let multH1 = document.getElementById("result3")
     multH1.textContent = result
-    document.getElementById("mult-button").append(multH1)
+
+    multForm.multiply1.value = 0
+    multForm.multiply2.value = 0
+
+    
 })

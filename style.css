@@ -1,17 +1,36 @@
+body {
+    background-color: black;
+}
+
+.header {
+display: flex;
+justify-content: center;    
+}
+.header-text {
+    color: white;
+}
+
 .calculator {
+    /* border:1px solid black; */
     display: flex;
     flex-direction:column;
-    justify-content: space-around;
+    align-items: center;
 }
 
 .Addition {
-
+    margin: 20px;
+    background-color: red;
+    padding: 60px;
 }
 
 .Subtraction {
-
+    margin: 20px;
+    background-color: lightblue;
+    padding: 60px;
 }
 
 .Multiplication {
-
+    margin: 20px;
+    background-color:  yellow;
+    padding: 60px;
 }
